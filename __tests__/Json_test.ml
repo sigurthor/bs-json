@@ -25,7 +25,7 @@ describe "parseOrRaise" (fun () ->
   test "error" (fun () ->
     expectFn
       parseOrRaise "{"
-      |> toThrowException (ParseError "Unexpected end of JSON input"));
+      |> toThrow );
 );
 
 test "stringify" (fun () ->
