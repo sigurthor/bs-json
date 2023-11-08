@@ -5,14 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "bsb -make-world",
-    "start": "bsb -make-world -w",
-    "coverage": "nyc report --temp-directory=coverage --reporter=text-lcov | coveralls",
-    "test:coverage": "npm run build && jest --coverage && npm run coverage && npm run test:examples",
-    "test": "npm run build && jest && npm run test:examples",
-    "test:examples": "npm run build && ./run_examples.sh",
-    "watch:bsb": "bsb -make-world -w",
-    "watch:jest": "jest --coverage --watchAll",
-    "watch:screen": "screen -c .screenrc"
+    "start": "bsb -make-world -w"
   },
   "repository": {
     "type": "git",
@@ -36,8 +29,5 @@
     "bs-platform": "^7.2.2",
     "coveralls": "^3.1.0",
     "nyc": "^15.0.1"
-  },
-  "jest": {
-    "testEnvironment": "node"
   }
 }
