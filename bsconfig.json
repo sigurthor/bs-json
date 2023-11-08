@@ -5,6 +5,7 @@
     "module": "commonjs",
     "in-source": true
   }],
+  "uncurried": false,
   "suffix": ".bs.js",
   "sources": [
     "src",
